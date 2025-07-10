@@ -1,21 +1,53 @@
-This project demonstrates how to automatically generate a well-structured PDF report from a CSV file using Python. The report includes:
+# 🌤️ Weather Forecast App using Python and Tkinter
 
-- Summary statistics generated from the dataset
-- A histogram plot of the salary data
-- All content compiled into a professional PDF using the ReportLab library
+A simple GUI-based weather forecasting application built with Python and Tkinter that fetches real-time weather data using the OpenWeatherMap API.
 
- Libraries used :
-- [Pandas](https://pandas.pydata.org/) – for data processing
-- [Matplotlib](https://matplotlib.org/) – for plotting
-- [ReportLab](https://www.reportlab.com/) – for PDF generation
-  
- Folder structure:
 
-  - project-folder/
 
-    
-    - sample_data.csv # Input data file
-    - plot.png # Auto-generated plot image
-    - reportlab_report.py # Main Python script
-    - automated_report.pdf # Output PDF report (auto-generated)
-    - README.md # Project readme
+## 📦 Features
+
+- GUI interface with city input field
+- Displays:
+  - City and country
+  - Temperature in Celsius and Fahrenheit
+  - Weather condition (e.g., Clear, Clouds, Rain)
+- Uses emojis and custom styling for a fun user experience
+- Error handling for invalid city names
+
+
+## 🧰 Technologies Used
+
+- Python 3
+- Tkinter (GUI)
+- requests (HTTP calls)
+- OpenWeatherMap API
+- configparser
+
+## 🚀 Getting Started
+1. Clone the repository
+
+```bash
+git clone https://github.com/yourusername/weather-forecast-app.git
+cd weather-forecast-app
+
+
+2.Get OpenWeatherMap API Key
+
+Sign up at https://openweathermap.org/api
+
+Go to your profile and copy your API key
+
+3.Create api.key file
+Create a file named api.key in the same directory as the script, and add:
+
+[api_key]
+key = your_api_key_here
+Replace your_api_key_here with your actual API key.
+
+4. File Structure
+weather-forecast-app/
+├── wetherApp.py         # Main Python script
+├── api.key              # Your API key file (not shared)
+
+
+
